@@ -1,0 +1,33 @@
+{
+	"$schema": "https://raw.githubusercontent.com/firebase/firebase-tools/master/schema/firebase-config.json",
+	"hosting": {
+		"public": "dist",
+		"ignore": ["firebase.json", "**/.*", "**/*.map", "**/*.map.*", "**/node_modules/**"],
+		"headers": [
+			{
+				"source": "/**",
+				"headers": [
+					{
+						"key": "Cache-Control",
+						"value": "max-age=900, stale-while-revalidate=180"
+					}
+				]
+			},
+			{
+				"source": "**/*.@(jpg|jpeg|gif|png|svg|webp|js|css|eot|otf|ttf|ttc|woff|woff2|font.css)",
+				"headers": [
+					{
+						"key": "Cache-Control",
+						"value": "max-age=604800"
+					}
+				]
+			}
+		],
+		"rewrites": [
+			{
+				"source": "**",
+				"destination": "/index.html"
+			}
+		]
+	}
+}
