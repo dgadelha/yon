@@ -1,0 +1,13 @@
+@mixin font($variant) {
+	@if $variant == "primary" {
+		font-family: var(--yon-font-primary-family);
+		font-weight: var(--yon-font-primary-weight);
+		font-size: var(--yon-font-primary-size);
+		line-height: var(--yon-font-primary-line-height);
+	} @else if $variant == "secondary" {
+		font-family: var(--yon-font-secondary-family);
+		font-weight: var(--yon-font-secondary-weight);
+		font-size: var(--yon-font-secondary-size);
+		line-height: var(--yon-font-secondary-line-height);
+	}
+}

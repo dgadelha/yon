@@ -1,0 +1,40 @@
+.button {
+	@include font("primary");
+	display: block;
+	border: 4px solid var(--yon-c-black);
+	border-radius: 0.5rem;
+	line-height: 1;
+	box-shadow: -0.25rem 0.25rem 0 var(--yon-c-black);
+	margin: 0.5rem;
+
+	&:hover {
+		filter: brightness(1.25);
+	}
+
+	&:active {
+		filter: brightness(0.8);
+		margin-bottom: 0.25rem;
+		margin-left: 0.25rem;
+		margin-right: 0.75rem;
+		margin-top: 0.75rem;
+		box-shadow: none;
+	}
+}
+
+.button--primary {
+	background-color: var(--yon-c-pink);
+}
+
+.button--secondary {
+	background-color: var(--yon-c-salmon);
+}
+
+.button--md {
+	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+}
+
+.button--lg {
+	font-size: 2rem;
+	padding: 0.75rem 1.5rem;
+}

@@ -1,0 +1,35 @@
+.home {
+	@include font("primary");
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.75rem;
+	text-align: center;
+}
+
+.title {
+	@include font("primary");
+	font-size: 6rem;
+	color: var(--yon-c-dark-gray);
+}
+
+.subtitle {
+	@include font("primary");
+	font-size: 3.5rem;
+	color: var(--yon-c-gray);
+}
+
+.cta {
+	@include font("primary");
+	font-size: 2rem;
+	color: var(--yon-c-salmon);
+}
+
+.title,
+.subtitle,
+.cta {
+	margin-bottom: 0;
+	line-height: 1;
+}

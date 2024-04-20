@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"lib": ["ES2022", "DOM"],
+		"checkJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitAny": false,
+		"jsx": "react-jsx",
+		"module": "ES2022",
+		"moduleResolution": "Bundler",
+		"noEmit": true,
+		"strict": true,
+		"verbatimModuleSyntax": true
+	},
+	"include": ["**/*"]
+}

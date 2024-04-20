@@ -1,0 +1,14 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	padding-bottom: 4rem;
+	height: 100%;
+}
+
+.loading {
+	max-width: 200px;
+	align-self: center;
+	flex-grow: 1;
+	object-fit: contain;
+}

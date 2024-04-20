@@ -1,0 +1,33 @@
+.result {
+	@include font("primary");
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.result__box {
+	@include font("primary");
+	padding: 1rem 2rem;
+	border: 4px solid var(--yon-c-black);
+	box-shadow: -0.25rem 0.25rem 0 var(--yon-c-black);
+	border-radius: 0.5rem;
+	font-size: 4rem;
+}
+
+.result--yes {
+	background-color: var(--yon-c-green);
+	color: var(--yon-c-dark-green);
+}
+
+.result--no {
+	background-color: var(--yon-c-red);
+	color: var(--yon-c-dark-red);
+}
+
+.result--error {
+	background-color: var(--yon-c-poop);
+	color: var(--yon-c-light-gray);
+}
