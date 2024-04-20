@@ -8,7 +8,7 @@ import s from "./style.module.scss";
 
 /**
  * @typedef {Object} ResultProps
- * @property {"0" | "1" | null} data
+ * @property {string | null} data
  * @property {() => void} onReset
  */
 

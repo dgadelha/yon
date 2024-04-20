@@ -9,12 +9,7 @@ function App() {
 	const yesNo = useMutation({
 		async mutationFn() {
 			return fetch("https://www.random.org/integers/?num=1&min=0&max=1&col=1&base=10&format=plain&rnd=new")
-				.then(response =>
-					response
-						.text()
-						.then(text => text.trim())
-						.then(result => new Promise(resolve => setTimeout(() => resolve(result), 500))),
-				)
+				.then(response => response.text().then(text => text.trim()))
 				.catch(() => null);
 		},
 	});
