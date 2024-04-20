@@ -1,5 +1,4 @@
 .result {
-	@include font("primary");
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
@@ -9,7 +8,6 @@
 }
 
 .result__box {
-	@include font("primary");
 	padding: 1rem 2rem;
 	border: 4px solid var(--yon-c-black);
 	box-shadow: -0.25rem 0.25rem 0 var(--yon-c-black);

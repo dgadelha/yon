@@ -20,7 +20,7 @@ function App() {
 
 			{yesNo.isSuccess && <Result data={yesNo.data} onReset={yesNo.reset} />}
 			{yesNo.isIdle && <Home onStart={() => yesNo.mutateAsync()} />}
-			{yesNo.isPending && <img className={s.loading} src="/images/loading.gif" alt="Loading" />}
+			{yesNo.isPending && <img className={s.loading} src="/images/loading.webp" alt="Loading" />}
 		</div>
 	);
 }

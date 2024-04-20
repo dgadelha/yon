@@ -1,5 +1,4 @@
 .home {
-	@include font("primary");
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
@@ -10,19 +9,16 @@
 }
 
 .title {
-	@include font("primary");
 	font-size: 6rem;
 	color: var(--yon-c-dark-gray);
 }
 
 .subtitle {
-	@include font("primary");
 	font-size: 3.5rem;
 	color: var(--yon-c-gray);
 }
 
 .cta {
-	@include font("primary");
 	font-size: 2rem;
 	color: var(--yon-c-salmon);
 }

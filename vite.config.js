@@ -8,9 +8,6 @@ export default defineConfig({
 		modules: {
 			localsConvention: "camelCase",
 		},
-		preprocessorOptions: {
-			scss: { additionalData: `@import "src/styles/mixins";` },
-		},
 	},
 	plugins: [react(), sassDts({ enabledMode: ["development", "production"] })],
 });

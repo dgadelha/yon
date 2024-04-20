@@ -1,6 +1,4 @@
 .header {
-	@include font("primary");
-
 	background-color: var(--yon-header-background);
 	color: var(--yon-header-color);
 	padding: 1rem 1.5rem;

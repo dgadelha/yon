@@ -1,8 +1,4 @@
 @import "bootstrap/scss/bootstrap-reboot.scss";
-@import "bootstrap/scss/bootstrap-grid.scss";
-
-@import "@fontsource/roboto";
-
 @import url("https://fonts.googleapis.com/css?family=Rubik+One:400");
 
 :root {
@@ -25,11 +21,6 @@
 	--yon-font-primary-size: 1.25rem;
 	--yon-font-primary-line-height: 1.5;
 
-	--yon-font-secondary-family: "Roboto", sans-serif;
-	--yon-font-secondary-weight: 400;
-	--yon-font-secondary-size: 1rem;
-	--yon-font-secondary-line-height: 1.5;
-
 	--yon-header-background: #1f2024;
 	--yon-header-color: #fff;
 }
@@ -49,6 +40,11 @@ body,
 body {
 	background-color: var(--yon-c-background);
 	position: relative;
+	font-family: var(--yon-font-primary-family);
+	font-weight: var(--yon-font-primary-weight);
+	font-size: var(--yon-font-primary-size);
+	line-height: var(--yon-font-primary-line-height);
+	color: var(--yon-c-black);
 }
 
 body::before {
@@ -59,17 +55,17 @@ body::before {
 	width: 100%;
 	height: 100%;
 	opacity: 0.1;
-	background: url("/images/background.png") repeat center center fixed;
+	background: url("/images/background.webp") repeat center center fixed;
 	background-size: auto 50%;
 	z-index: -1;
 }
 
-@include media-breakpoint-up(md) {
+.spacer {
+	flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
 	body::before {
 		background-size: auto 75%;
 	}
-}
-
-.spacer {
-	flex-grow: 1;
 }
