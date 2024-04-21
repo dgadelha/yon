@@ -7,9 +7,12 @@ import unicorn from "eslint-plugin-unicorn";
 
 export default [
 	{
+		env: {
+			browser: true,
+		},
 		ignores: ["node_modules/*", "dist/*"],
 	},
-	eslint.configs.all,
+	eslint.configs.recommended,
 	jsdoc.configs["flat/recommended"],
 	unicorn.configs["flat/all"],
 	prettier,
@@ -29,6 +32,7 @@ export default [
 	},
 	{
 		rules: {
+			"unicorn/no-null": "off",
 			"sort-imports": "off",
 		},
 	},

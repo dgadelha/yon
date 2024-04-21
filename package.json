@@ -11,7 +11,6 @@
 	},
 	"dependencies": {
 		"@fontsource/rubik-one": "^5.0.1",
-		"@tanstack/react-query": "^5.29.2",
 		"bootstrap": "^5.3.3",
 		"clsx": "^2.1.0",
 		"react": "^18.2.0",
