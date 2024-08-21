@@ -8,6 +8,11 @@ export default defineConfig({
 		modules: {
 			localsConvention: "camelCase",
 		},
+		preprocessorOptions: {
+			scss: {
+				quietDeps: true,
+			},
+		},
 	},
 	plugins: [react(), sassDts({ enabledMode: ["development", "production"] })],
 });
