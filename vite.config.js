@@ -14,5 +14,11 @@ export default defineConfig({
 			},
 		},
 	},
-	plugins: [react(), sassDts({ enabledMode: ["development", "production"] })],
+	plugins: [
+		react(),
+		sassDts({
+			enabledMode: ["development", "production"],
+			legacyFileFormat: true,
+		}),
+	],
 });
