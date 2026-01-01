@@ -24,3 +24,11 @@
 		font-size: 1rem;
 	}
 }
+
+@media (hover: none) {
+	.header {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
+	}
+}

@@ -29,3 +29,11 @@
 	background-color: var(--yon-c-poop);
 	color: var(--yon-c-light-gray);
 }
+
+@media (hover: none) {
+	.result {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
+	}
+}

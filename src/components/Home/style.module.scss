@@ -29,3 +29,11 @@
 	margin-bottom: 0;
 	line-height: 1;
 }
+
+@media (hover: none) {
+	.home {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
+	}
+}
